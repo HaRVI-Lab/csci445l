@@ -337,8 +337,8 @@ class ObstacleAvoidingWaypointController:
 
 """ Example usage
 
-rosrun development lab6_7.py --mode obstacle_free
-rosrun development lab6_7.py --mode obstacle_avoiding
+rosrun csci445l lab6_7.py --mode obstacle_free
+rosrun csci445l lab6_7.py --mode obstacle_avoiding
 """
 
 
