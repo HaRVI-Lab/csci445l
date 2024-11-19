@@ -10,7 +10,8 @@ class TurtlebotController:
         rospy.init_node("turtlebot_controller", anonymous=True)
         self.cmd_vel_pub_tb3_0 = rospy.Publisher("tb3_0/cmd_vel", Twist, queue_size=10)
         self.cmd_vel_pub_tb3_1 = rospy.Publisher("tb3_1/cmd_vel", Twist, queue_size=10)
-        self.cmd_vel_publishers = [self.cmd_vel_pub_tb3_0, self.cmd_vel_pub_tb3_1]
+        self.cmd_vel_pub_tb3_2 = rospy.Publisher("tb3_2/cmd_vel", Twist, queue_size=10)
+        self.cmd_vel_publishers = [self.cmd_vel_pub_tb3_0, self.cmd_vel_pub_tb3_1, self.cmd_vel_pub_tb3_2]
         self.rate = rospy.Rate(10)  # Set rate to 10 Hz
         rospy.sleep(1)  # Add delay to ensure publisher is set up properly
 
